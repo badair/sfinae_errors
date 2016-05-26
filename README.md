@@ -13,12 +13,11 @@ A single C++ header file for SFINAE-able error messages. Templated code with SFI
     #include <type_traits>
     #include "sfinae_errors.hpp"
     
-    // An error "origin" tells users the template
-    // which caused the problem 
+    // An error "origin" describes the source of the substitution failure
     DEFINE_SFINAE_ERROR_ORIGIN(const_copyable)
     
     // T_must_be_const and T_must_be_copy_constructible are 
-    // SFINAE "exceptions" that are associated with an origin
+    // SFINAE "exceptions", associated with const_copyable
     DEFINE_SFINAE_ERROR_FOR(const_copyable, T_must_be_const)
     DEFINE_SFINAE_ERROR_FOR(const_copyable, T_must_be_copy_constructible)
         
