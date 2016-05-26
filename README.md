@@ -16,7 +16,12 @@ A single C++ header file for SFINAE-able error messages. SFINAE-able error messa
     #include <type_traits>
     #include "sfinae_errors.hpp"
     
+    // An error "origin" tells users the template
+    // which caused the problem 
     DEFINE_SFINAE_ERROR_ORIGIN(const_copyable)
+    
+    // T_must_be_const and T_must_be_copy_constructible are 
+    // SFINAE "exceptions" that are associated with an origin
     DEFINE_SFINAE_ERROR_FOR(const_copyable, T_must_be_const)
     DEFINE_SFINAE_ERROR_FOR(const_copyable, T_must_be_copy_constructible)
         
