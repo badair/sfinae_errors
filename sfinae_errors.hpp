@@ -6,6 +6,9 @@ Distributed under the Boost Software License, Version 1.0.
 
 */
 
+#ifndef SFINAE_ERRORS_HPP
+#define SFINAE_ERRORS_HPP
+
 #include <type_traits>
 
 namespace sfinae_errors {
@@ -73,3 +76,5 @@ namespace error {                             \
 struct SFINAE_ERRORS_PP_CAT(name, _ ){};                       \
 struct name : error::origin<SFINAE_ERRORS_PP_CAT(name, _ )>{}; \
 /**/
+
+#endif // #ifndef SFINAE_ERRORS_HPP
