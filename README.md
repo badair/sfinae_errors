@@ -6,7 +6,7 @@ Distributed under the Boost Software License, Version 1.0.
 
 # SfinaeErrors <a target="_blank" href="http://melpon.org/wandbox/permlink/eBn8swZQKzG1Hmmd">![Try it online][badge.wandbox]</a>
 
-A single C++ header file for SFINAE-able error messages. Templated code with SFINAE-able error messages is easier to debug, without the inflexibility that comes with `static_assert`.
+A single C++ header file for SFINAE-able error messages. Templated code with SFINAE-able error messages is easier to debug, and doesn't suffer from the inflexibility that comes with `static_assert`.
 
 ```cpp
     
