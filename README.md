@@ -4,9 +4,7 @@ Distributed under the Boost Software License, Version 1.0.
 (See accompanying file LICENSE.md or copy at http://boost.org/LICENSE_1_0.txt)
 -->
 
-# SfinaeErrors 
-<a target="_blank" href="http://melpon.org/wandbox/permlink/eBn8swZQKzG1Hmmd">![Try it online][badge.wandbox]</a>
--->
+# SfinaeErrors <a target="_blank" href="http://melpon.org/wandbox/permlink/eBn8swZQKzG1Hmmd">![Try it online][badge.wandbox]</a>
 
 A single C++ header file for SFINAE-able error messages. SFINAE-able error messages similar to `static_assert`, except that they are SFINAE-able. A library that uses SfinaeErrors lends itself to easy compile-time debugging, without giving up the flexibility of SFINAE.
 
